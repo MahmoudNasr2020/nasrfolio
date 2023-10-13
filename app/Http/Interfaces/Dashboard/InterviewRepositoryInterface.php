@@ -1,0 +1,17 @@
+<?php
+
+
+namespace App\Http\Interfaces\Dashboard;
+
+
+interface InterviewRepositoryInterface
+{
+    public function index($datatable);
+    //public function show();
+    //public function create();
+    public function store($request);
+    public function edit($uuid);
+    public function update($request,$uuid);
+    public function delete($uuid);
+    public function multi_delete(array $data);
+}
